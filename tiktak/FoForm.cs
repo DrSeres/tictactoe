@@ -32,6 +32,10 @@ namespace tiktak
             {
                 MessageBox.Show("Kérlek jelöld meg, hogy melyikkel szeretnél lenni", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else if (cbValaszto1.Text == cbValaszto2.Text)
+            {
+                MessageBox.Show("Kérlek jelölj meg különbözőt", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             else
             {
                 JatekForm j = new JatekForm();
