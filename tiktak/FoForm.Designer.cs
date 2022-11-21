@@ -100,7 +100,6 @@ namespace tiktak
             this.cbValaszto1.Name = "cbValaszto1";
             this.cbValaszto1.Size = new System.Drawing.Size(66, 28);
             this.cbValaszto1.TabIndex = 3;
-            this.cbValaszto1.SelectedIndexChanged += new System.EventHandler(this.cbValaszto1_SelectedIndexChanged);
             // 
             // cbValaszto2
             // 
