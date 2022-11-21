@@ -47,6 +47,7 @@ namespace tiktak
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Right;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.kilépésToolStripMenuItem});
@@ -68,7 +69,7 @@ namespace tiktak
             // 
             this.lblJatekos1.AutoSize = true;
             this.lblJatekos1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblJatekos1.Location = new System.Drawing.Point(511, 127);
+            this.lblJatekos1.Location = new System.Drawing.Point(486, 127);
             this.lblJatekos1.Name = "lblJatekos1";
             this.lblJatekos1.Size = new System.Drawing.Size(222, 31);
             this.lblJatekos1.TabIndex = 1;
@@ -78,7 +79,7 @@ namespace tiktak
             // 
             this.lblJatekos2.AutoSize = true;
             this.lblJatekos2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblJatekos2.Location = new System.Drawing.Point(511, 196);
+            this.lblJatekos2.Location = new System.Drawing.Point(486, 187);
             this.lblJatekos2.Name = "lblJatekos2";
             this.lblJatekos2.Size = new System.Drawing.Size(260, 31);
             this.lblJatekos2.TabIndex = 1;
@@ -160,6 +161,9 @@ namespace tiktak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::tiktak.Properties.Resources.wp8984722_tic_tac_toe_wallpapers;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(831, 507);
             this.ControlBox = false;
             this.Controls.Add(this.btnKilenc);

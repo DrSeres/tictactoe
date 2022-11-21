@@ -95,6 +95,7 @@ namespace tiktak
             // cbValaszto1
             // 
             this.cbValaszto1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.cbValaszto1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbValaszto1.FormattingEnabled = true;
             this.cbValaszto1.Location = new System.Drawing.Point(332, 104);
             this.cbValaszto1.Name = "cbValaszto1";
@@ -104,6 +105,7 @@ namespace tiktak
             // cbValaszto2
             // 
             this.cbValaszto2.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.cbValaszto2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cbValaszto2.FormattingEnabled = true;
             this.cbValaszto2.Location = new System.Drawing.Point(332, 149);
             this.cbValaszto2.Name = "cbValaszto2";
@@ -112,12 +114,14 @@ namespace tiktak
             // 
             // btnJatekKezdes
             // 
+            this.btnJatekKezdes.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnJatekKezdes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnJatekKezdes.Location = new System.Drawing.Point(144, 240);
             this.btnJatekKezdes.Name = "btnJatekKezdes";
             this.btnJatekKezdes.Size = new System.Drawing.Size(273, 79);
             this.btnJatekKezdes.TabIndex = 4;
             this.btnJatekKezdes.Text = "Játék kezdése";
-            this.btnJatekKezdes.UseVisualStyleBackColor = true;
+            this.btnJatekKezdes.UseVisualStyleBackColor = false;
             this.btnJatekKezdes.Click += new System.EventHandler(this.btnJatekKezdes_Click);
             // 
             // menuStrip1
@@ -133,8 +137,10 @@ namespace tiktak
             // 
             // kilépésToolStripMenuItem
             // 
+            this.kilépésToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.kilépésToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.kilépésToolStripMenuItem.Name = "kilépésToolStripMenuItem";
-            this.kilépésToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.kilépésToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.kilépésToolStripMenuItem.Text = "Kilépés";
             this.kilépésToolStripMenuItem.Click += new System.EventHandler(this.kilépésToolStripMenuItem_Click);
             // 
@@ -143,7 +149,7 @@ namespace tiktak
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(569, 443);
             this.ControlBox = false;
             this.Controls.Add(this.btnJatekKezdes);
@@ -162,6 +168,7 @@ namespace tiktak
             this.Name = "FoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TicTacToe";
+            this.Load += new System.EventHandler(this.FoForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
