@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TTTDll;
 
 namespace tiktak
 {
     public partial class FoForm : Form
     {
+        public string nev1;
+        public string nev2;
+
         public FoForm()
         {
             InitializeComponent();
@@ -28,44 +32,34 @@ namespace tiktak
             {
                 MessageBox.Show("Kérlek írj bele nevet!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (cbValaszto1.Text == "" || cbValaszto2.Text == "")
-            {
-                MessageBox.Show("Kérlek jelöld meg, hogy melyikkel szeretnél lenni", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (cbValaszto1.Text == cbValaszto2.Text)
-            {
-                MessageBox.Show("Kérlek jelölj meg különbözőt", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
             else
             {
-                JatekForm j = new JatekForm();
+                nev1 = tbJatekosNev1.Text;
+                nev2 = tbJatekosNev2.Text;
+                
+                JatekForm j = new JatekForm(this);
                 j.Show();
                 this.Hide();
             }
 
-
+            
         }
 
         private void cbValaszto1_Click(object sender, EventArgs e)
         {
-            cbValaszto1.Items.Add("X");
-            cbValaszto1.Items.Add("O");
+            
         }
 
         private void cbValaszto1_SelectedValueChanged(object sender, EventArgs e)
         {
-            cbValaszto1.Items.Add("X");
+            
         }
 
         
 
         private void FoForm_Load(object sender, EventArgs e)
         {
-            cbValaszto1.Items.Add("X");
-            cbValaszto1.Items.Add("O");
-
-            cbValaszto2.Items.Add("X");
-            cbValaszto2.Items.Add("O");
+            
             
         }
 

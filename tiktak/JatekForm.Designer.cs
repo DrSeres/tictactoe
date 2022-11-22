@@ -33,15 +33,16 @@ namespace tiktak
             this.kilépésToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblJatekos1 = new System.Windows.Forms.Label();
             this.lblJatekos2 = new System.Windows.Forms.Label();
-            this.btnElso = new System.Windows.Forms.Button();
-            this.btnMasodik = new System.Windows.Forms.Button();
-            this.btnHarmadik = new System.Windows.Forms.Button();
-            this.btnNegyedik = new System.Windows.Forms.Button();
-            this.btnOtodik = new System.Windows.Forms.Button();
-            this.btnHatodik = new System.Windows.Forms.Button();
-            this.btnHetedik = new System.Windows.Forms.Button();
-            this.btnNyolcadik = new System.Windows.Forms.Button();
-            this.btnKilenc = new System.Windows.Forms.Button();
+            this.btn1 = new System.Windows.Forms.Button();
+            this.btn2 = new System.Windows.Forms.Button();
+            this.btn3 = new System.Windows.Forms.Button();
+            this.btn4 = new System.Windows.Forms.Button();
+            this.btn5 = new System.Windows.Forms.Button();
+            this.btn6 = new System.Windows.Forms.Button();
+            this.btn7 = new System.Windows.Forms.Button();
+            this.btn8 = new System.Windows.Forms.Button();
+            this.btn9 = new System.Windows.Forms.Button();
+            this.lblJelenlegi = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,7 +70,7 @@ namespace tiktak
             // 
             this.lblJatekos1.AutoSize = true;
             this.lblJatekos1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblJatekos1.Location = new System.Drawing.Point(486, 127);
+            this.lblJatekos1.Location = new System.Drawing.Point(440, 127);
             this.lblJatekos1.Name = "lblJatekos1";
             this.lblJatekos1.Size = new System.Drawing.Size(222, 31);
             this.lblJatekos1.TabIndex = 1;
@@ -79,83 +80,101 @@ namespace tiktak
             // 
             this.lblJatekos2.AutoSize = true;
             this.lblJatekos2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblJatekos2.Location = new System.Drawing.Point(486, 187);
+            this.lblJatekos2.Location = new System.Drawing.Point(440, 187);
             this.lblJatekos2.Name = "lblJatekos2";
             this.lblJatekos2.Size = new System.Drawing.Size(260, 31);
             this.lblJatekos2.TabIndex = 1;
             this.lblJatekos2.Text = "Játékos2:Következő";
             // 
-            // btnElso
+            // btn1
             // 
-            this.btnElso.Location = new System.Drawing.Point(102, 71);
-            this.btnElso.Name = "btnElso";
-            this.btnElso.Size = new System.Drawing.Size(98, 87);
-            this.btnElso.TabIndex = 2;
-            this.btnElso.UseVisualStyleBackColor = true;
+            this.btn1.Location = new System.Drawing.Point(102, 71);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(98, 87);
+            this.btn1.TabIndex = 2;
+            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.ClickedTest);
             // 
-            // btnMasodik
+            // btn2
             // 
-            this.btnMasodik.Location = new System.Drawing.Point(206, 71);
-            this.btnMasodik.Name = "btnMasodik";
-            this.btnMasodik.Size = new System.Drawing.Size(98, 87);
-            this.btnMasodik.TabIndex = 2;
-            this.btnMasodik.UseVisualStyleBackColor = true;
+            this.btn2.Location = new System.Drawing.Point(206, 71);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(98, 87);
+            this.btn2.TabIndex = 2;
+            this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.ClickedTest);
             // 
-            // btnHarmadik
+            // btn3
             // 
-            this.btnHarmadik.Location = new System.Drawing.Point(310, 71);
-            this.btnHarmadik.Name = "btnHarmadik";
-            this.btnHarmadik.Size = new System.Drawing.Size(98, 87);
-            this.btnHarmadik.TabIndex = 2;
-            this.btnHarmadik.UseVisualStyleBackColor = true;
+            this.btn3.Location = new System.Drawing.Point(310, 71);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(98, 87);
+            this.btn3.TabIndex = 2;
+            this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.ClickedTest);
             // 
-            // btnNegyedik
+            // btn4
             // 
-            this.btnNegyedik.Location = new System.Drawing.Point(102, 164);
-            this.btnNegyedik.Name = "btnNegyedik";
-            this.btnNegyedik.Size = new System.Drawing.Size(98, 87);
-            this.btnNegyedik.TabIndex = 2;
-            this.btnNegyedik.UseVisualStyleBackColor = true;
+            this.btn4.Location = new System.Drawing.Point(102, 164);
+            this.btn4.Name = "btn4";
+            this.btn4.Size = new System.Drawing.Size(98, 87);
+            this.btn4.TabIndex = 2;
+            this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.ClickedTest);
             // 
-            // btnOtodik
+            // btn5
             // 
-            this.btnOtodik.Location = new System.Drawing.Point(206, 164);
-            this.btnOtodik.Name = "btnOtodik";
-            this.btnOtodik.Size = new System.Drawing.Size(98, 87);
-            this.btnOtodik.TabIndex = 2;
-            this.btnOtodik.UseVisualStyleBackColor = true;
+            this.btn5.Location = new System.Drawing.Point(206, 164);
+            this.btn5.Name = "btn5";
+            this.btn5.Size = new System.Drawing.Size(98, 87);
+            this.btn5.TabIndex = 2;
+            this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.ClickedTest);
             // 
-            // btnHatodik
+            // btn6
             // 
-            this.btnHatodik.Location = new System.Drawing.Point(310, 164);
-            this.btnHatodik.Name = "btnHatodik";
-            this.btnHatodik.Size = new System.Drawing.Size(98, 87);
-            this.btnHatodik.TabIndex = 2;
-            this.btnHatodik.UseVisualStyleBackColor = true;
+            this.btn6.Location = new System.Drawing.Point(310, 164);
+            this.btn6.Name = "btn6";
+            this.btn6.Size = new System.Drawing.Size(98, 87);
+            this.btn6.TabIndex = 2;
+            this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.ClickedTest);
             // 
-            // btnHetedik
+            // btn7
             // 
-            this.btnHetedik.Location = new System.Drawing.Point(102, 257);
-            this.btnHetedik.Name = "btnHetedik";
-            this.btnHetedik.Size = new System.Drawing.Size(98, 87);
-            this.btnHetedik.TabIndex = 2;
-            this.btnHetedik.UseVisualStyleBackColor = true;
+            this.btn7.Location = new System.Drawing.Point(102, 257);
+            this.btn7.Name = "btn7";
+            this.btn7.Size = new System.Drawing.Size(98, 87);
+            this.btn7.TabIndex = 2;
+            this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.ClickedTest);
             // 
-            // btnNyolcadik
+            // btn8
             // 
-            this.btnNyolcadik.Location = new System.Drawing.Point(206, 257);
-            this.btnNyolcadik.Name = "btnNyolcadik";
-            this.btnNyolcadik.Size = new System.Drawing.Size(98, 87);
-            this.btnNyolcadik.TabIndex = 2;
-            this.btnNyolcadik.UseVisualStyleBackColor = true;
+            this.btn8.Location = new System.Drawing.Point(206, 257);
+            this.btn8.Name = "btn8";
+            this.btn8.Size = new System.Drawing.Size(98, 87);
+            this.btn8.TabIndex = 2;
+            this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.ClickedTest);
             // 
-            // btnKilenc
+            // btn9
             // 
-            this.btnKilenc.Location = new System.Drawing.Point(310, 257);
-            this.btnKilenc.Name = "btnKilenc";
-            this.btnKilenc.Size = new System.Drawing.Size(98, 87);
-            this.btnKilenc.TabIndex = 2;
-            this.btnKilenc.UseVisualStyleBackColor = true;
+            this.btn9.Location = new System.Drawing.Point(310, 257);
+            this.btn9.Name = "btn9";
+            this.btn9.Size = new System.Drawing.Size(98, 87);
+            this.btn9.TabIndex = 2;
+            this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.ClickedTest);
+            // 
+            // lblJelenlegi
+            // 
+            this.lblJelenlegi.AutoSize = true;
+            this.lblJelenlegi.Location = new System.Drawing.Point(165, 430);
+            this.lblJelenlegi.Name = "lblJelenlegi";
+            this.lblJelenlegi.Size = new System.Drawing.Size(126, 20);
+            this.lblJelenlegi.TabIndex = 3;
+            this.lblJelenlegi.Text = "Jelenlegi játékos";
             // 
             // JatekForm
             // 
@@ -166,15 +185,16 @@ namespace tiktak
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(831, 507);
             this.ControlBox = false;
-            this.Controls.Add(this.btnKilenc);
-            this.Controls.Add(this.btnHatodik);
-            this.Controls.Add(this.btnHarmadik);
-            this.Controls.Add(this.btnNyolcadik);
-            this.Controls.Add(this.btnOtodik);
-            this.Controls.Add(this.btnMasodik);
-            this.Controls.Add(this.btnHetedik);
-            this.Controls.Add(this.btnNegyedik);
-            this.Controls.Add(this.btnElso);
+            this.Controls.Add(this.lblJelenlegi);
+            this.Controls.Add(this.btn9);
+            this.Controls.Add(this.btn6);
+            this.Controls.Add(this.btn3);
+            this.Controls.Add(this.btn8);
+            this.Controls.Add(this.btn5);
+            this.Controls.Add(this.btn2);
+            this.Controls.Add(this.btn7);
+            this.Controls.Add(this.btn4);
+            this.Controls.Add(this.btn1);
             this.Controls.Add(this.lblJatekos2);
             this.Controls.Add(this.lblJatekos1);
             this.Controls.Add(this.menuStrip1);
@@ -196,14 +216,15 @@ namespace tiktak
         private System.Windows.Forms.ToolStripMenuItem kilépésToolStripMenuItem;
         private System.Windows.Forms.Label lblJatekos1;
         private System.Windows.Forms.Label lblJatekos2;
-        private System.Windows.Forms.Button btnElso;
-        private System.Windows.Forms.Button btnMasodik;
-        private System.Windows.Forms.Button btnHarmadik;
-        private System.Windows.Forms.Button btnNegyedik;
-        private System.Windows.Forms.Button btnOtodik;
-        private System.Windows.Forms.Button btnHatodik;
-        private System.Windows.Forms.Button btnHetedik;
-        private System.Windows.Forms.Button btnNyolcadik;
-        private System.Windows.Forms.Button btnKilenc;
+        private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.Button btn2;
+        private System.Windows.Forms.Button btn3;
+        private System.Windows.Forms.Button btn4;
+        private System.Windows.Forms.Button btn5;
+        private System.Windows.Forms.Button btn6;
+        private System.Windows.Forms.Button btn7;
+        private System.Windows.Forms.Button btn8;
+        private System.Windows.Forms.Button btn9;
+        private System.Windows.Forms.Label lblJelenlegi;
     }
 }

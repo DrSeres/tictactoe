@@ -34,11 +34,11 @@ namespace tiktak
             this.tbJatekosNev1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tbJatekosNev2 = new System.Windows.Forms.TextBox();
-            this.cbValaszto1 = new System.Windows.Forms.ComboBox();
-            this.cbValaszto2 = new System.Windows.Forms.ComboBox();
             this.btnJatekKezdes = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.kilépésToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,26 +92,6 @@ namespace tiktak
             this.tbJatekosNev2.Size = new System.Drawing.Size(129, 26);
             this.tbJatekosNev2.TabIndex = 2;
             // 
-            // cbValaszto1
-            // 
-            this.cbValaszto1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.cbValaszto1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.cbValaszto1.FormattingEnabled = true;
-            this.cbValaszto1.Location = new System.Drawing.Point(332, 104);
-            this.cbValaszto1.Name = "cbValaszto1";
-            this.cbValaszto1.Size = new System.Drawing.Size(66, 28);
-            this.cbValaszto1.TabIndex = 3;
-            // 
-            // cbValaszto2
-            // 
-            this.cbValaszto2.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.cbValaszto2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.cbValaszto2.FormattingEnabled = true;
-            this.cbValaszto2.Location = new System.Drawing.Point(332, 149);
-            this.cbValaszto2.Name = "cbValaszto2";
-            this.cbValaszto2.Size = new System.Drawing.Size(66, 28);
-            this.cbValaszto2.TabIndex = 3;
-            // 
             // btnJatekKezdes
             // 
             this.btnJatekKezdes.BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -144,6 +124,26 @@ namespace tiktak
             this.kilépésToolStripMenuItem.Text = "Kilépés";
             this.kilépésToolStripMenuItem.Click += new System.EventHandler(this.kilépésToolStripMenuItem_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.textBox1.Location = new System.Drawing.Point(329, 106);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(28, 26);
+            this.textBox1.TabIndex = 6;
+            this.textBox1.Text = "X";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.textBox2.Location = new System.Drawing.Point(329, 148);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(28, 26);
+            this.textBox2.TabIndex = 6;
+            this.textBox2.Text = "O";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // FoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -152,9 +152,9 @@ namespace tiktak
             this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(569, 443);
             this.ControlBox = false;
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnJatekKezdes);
-            this.Controls.Add(this.cbValaszto2);
-            this.Controls.Add(this.cbValaszto1);
             this.Controls.Add(this.tbJatekosNev2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tbJatekosNev1);
@@ -181,12 +181,12 @@ namespace tiktak
         private System.Windows.Forms.TextBox tbJatekosNev1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbJatekosNev2;
-        private System.Windows.Forms.ComboBox cbValaszto1;
-        private System.Windows.Forms.ComboBox cbValaszto2;
         private System.Windows.Forms.Button btnJatekKezdes;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem kilépésToolStripMenuItem;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 
